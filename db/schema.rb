@@ -12,15 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_12_15_104317) do
 
-  create_table "authors", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "gender"
-    t.datetime "birthday"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string "name"
     t.string "title"
@@ -28,7 +19,6 @@ ActiveRecord::Schema.define(version: 2020_12_15_104317) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "author_id"
   end
 
 end
